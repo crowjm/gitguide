@@ -41,6 +41,11 @@ p, a {
 	font-family: $code-type;
 }
 
+.callout--linumber {
+	font-size: 1.2rem;
+	font-weight: $body-bold;
+}
+
 /*general alignment styles*/
 .wrapper {
 	margin-left: auto;

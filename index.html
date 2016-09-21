@@ -13,20 +13,20 @@
 			<h1>Getting Started with GitHub</h1>
 			<p>GitHub is what we'll use to host our sites. It's based on Git, which is a version control system (allows you to manage and store revisions to projects). GitHub is part code and design hosting site and part social network.</p>
 			<p>Let's git started!</p>
-			<p class="callout--small">A note: I'm using "test1" in my examples, but you should use "yourusername.github.io"</p>
+			<p>A note: I'm using "test1" in my examples, but you should use "yourusername.github.io"</p>
 			<section>
 				<h2>Install Xcode</h2>
 				<ol>
 					<li>
-						<p>In terminal, run the command <span class="callout--code">xcode-select --install</span>.</p>
+						<p><span class="callout--linumber">1.</span> In terminal, run the command <span class="callout--code">xcode-select --install</span>.</p>
 						<img src="images/step1.png" alt="">
 					</li>
 					<li>
-						<p>You'll get a pop up that says “code-select” (the command we just ran) requires command line developer tools and asks if you want to install the tools now. Hit the blue install button on the bottom right of the popup.</p>
+						<p><span class="callout--linumber">2.</span> You'll get a pop up that says “code-select” (the command we just ran) requires command line developer tools and asks if you want to install the tools now. Hit the blue install button on the bottom right of the popup.</p>
 						<img src="images/step2.png" alt="">
 					</li>
 					<li>
-						<p>In terminal, run the command <span class="callout--code">git</span>. If you see a list of options, you're good to go.</p>
+						<p><span class="callout--linumber">3.</span> In terminal, run the command <span class="callout--code">git</span>. If you see a list of options, you're good to go.</p>
 						<img src="images/step3.png" alt="">
 					</li>
 				</ol>
@@ -39,11 +39,11 @@
 				<h2>Get GitHub Ready for Our Files</h2>
 				<ol>
 					<li>
-						<p>Create a new repository (also called a "repo"). A repo is a folder that contains code, images, designfiles, etc on GitHub (much like a directory, or folder, contains those items on our computer).</p>
+						<p><span class="callout--linumber">1.</span> Create a new repository (also called a "repo"). A repo is a folder that contains code, images, designfiles, etc on GitHub (much like a directory, or folder, contains those items on our computer).</p>
 						<img src="images/step4.png" alt="">
 					</li>
 					<li>
-						<p>The feature that we're using to host our site is called GitHub Pages. To use GitHub pages, your repo name has to be very specific. Your repo name should be <span class="callout--code">yourgithubusername.github.io</span>.</p>
+						<p><span class="callout--linumber">2.</span> The feature that we're using to host our site is called GitHub Pages. To use GitHub pages, your repo name has to be very specific. Your repo name should be <span class="callout--code">yourgithubusername.github.io</span>.</p>
 					</li>
 				</ol>
 			</section>
@@ -63,41 +63,41 @@
 				<h2>Set Up Git</h2>
 				<ol>
 					<li>
-						<p>Open your terminal and navigate to the yourusername.github.io folder. You can either drag the folder into terminal and hit enter or use <span class="callout--code">cd</span> to change directories.</p>
+						<p><span class="callout--linumber">1.</span> Open your terminal and navigate to the yourusername.github.io folder. You can either drag the folder into terminal and hit enter or use <span class="callout--code">cd</span> to change directories.</p>
 					</li>
 					<li>
-						<p>Run the command <span class="callout--code">git init</span>. This adds Git magic to the yourusername.github.io folder.</p>
+						<p><span class="callout--linumber">2.</span> Run the command <span class="callout--code">git init</span>. This adds Git magic to the yourusername.github.io folder.</p>
 						<p>Note: you only need to run this command the first time you set up a repo.</p>
 						<img src="images/step5.png" alt="">
 					</li>
 					<li>
 						<p>
-							Run the command <span class="callout--code">git status</span>. This lets you see any files that have been changed and also what branch you're working on (we'll get to branches soon).
+							<span class="callout--linumber">3.</span> Run the command <span class="callout--code">git status</span>. This lets you see any files that have been changed and also what branch you're working on (we'll get to branches soon).
 						</p>
 						<img src="images/step6.png" alt="">
 					</li>
 					<li>
 						<p>
-							Run the command <span class="callout--code">git add .</span> (including the . at the end). This adds all the files that you saw in red when you ran <span class="callout--code">git status</span> to the queue to be added to GitHub. If you run <span class="callout--code">git status</span> again, you'll see the files are in green, not red.
+							<span class="callout--linumber">4.</span> Run the command <span class="callout--code">git add .</span> (including the . at the end). This adds all the files that you saw in red when you ran <span class="callout--code">git status</span> to the queue to be added to GitHub. If you run <span class="callout--code">git status</span> again, you'll see the files are in green, not red.
 						</p>
 						<img src="images/step7.png" alt="">
 					</li>
 					<li>
 						<p>
-							We now need to add the path to the specific GitHub repo to our directory so that the files know where to go when we send them to GitHub. The command that you need to run looks something like this: <span class="callout--code">git remote add origin https://github.com/crowjm/test1.git</span>. You'll want to use the https link for your specific GitHub repo, though.
+							<span class="callout--linumber">5.</span> We now need to add the path to the specific GitHub repo to our directory so that the files know where to go when we send them to GitHub. The command that you need to run looks something like this: <span class="callout--code">git remote add origin https://github.com/crowjm/test1.git</span>. You'll want to use the https link for your specific GitHub repo, though.
 						</p>
 						<p>Note: this command is only run the first time you set up a repo.</p>
 						<img src="images/step8.png" alt="">
 					</li>
 					<li>
 						<p>
-							Next up, we need to write a little message deatiling what files we've added and/or what changes have been made. We do this using <span class="callout--code">git commit -m "message"</span>. For the first commit, "init commit" is common practice, but you'll want to be more specific after that.
+							<span class="callout--linumber">6.</span> Next up, we need to write a little message deatiling what files we've added and/or what changes have been made. We do this using <span class="callout--code">git commit -m "message"</span>. For the first commit, "init commit" is common practice, but you'll want to be more specific after that.
 						</p>
 						<img src="images/step9.png" alt="">
 					</li>
 					<li>
 						<p>
-							We've got our files added to the queue to send to GitHub along with a message about them, and we've also added the Git magic to our folder, and told our files the specific location we want them to go on GitHub.
+							<span class="callout--linumber">7.</span> We've got our files added to the queue to send to GitHub along with a message about them, and we've also added the Git magic to our folder, and told our files the specific location we want them to go on GitHub.
 						</p>
 						<p>The last thing to do is push our files from our computer to GitHub! We do this using <span class="callout--code">git push origin branchname</span>. In this case, the branchname is master, so we'll run <span class="callout--code">git push origin master</span>.</p>
 						<img src="images/step10.png" alt="">
@@ -124,25 +124,45 @@
 			<section>
 				<h2>Making Changes</h2>
 				<p>Say you want to make a change to your nav. What would that workflow look like?</p>
-				<p>First checkout to a new branch. We'll call it nav-change <span class="callout--code">git checkout -b nav-change</span>.</p>
-				<img src="images/step13.png" alt="">
-				<p>Make your changes. Run <span class="callout--code">git status</span> to see the files that were changed.</p>
-				<img src="3images/step14.png" alt="">
-				<p>Add your changes to the queue to be added to GitHub using <span class="callout--code">git add .</span>.</p>
-				<p>Write a commit message explaining what changes are made. <span class="callout--code">git commit -m "change nav bg color to blue"</span>.</p>
-				<img src="images/step15.png" alt="">
-				<p>Lastly, push your changes up to GitHub, <span class="callout--code">git push origin nav-change</span>.</p>
-				<img src="images/step16.png" alt="">
+				<ol>
+					<li>
+						<span class="callout--linumber">1.</span> <p>First checkout to a new branch. We'll call it nav-change <span class="callout--code">git checkout -b nav-change</span>.</p>
+						<img src="images/step13.png" alt="">
+					</li>
+					<li>
+						<p><span class="callout--linumber">2.</span> Make your changes. Run <span class="callout--code">git status</span> to see the files that were changed.</p>
+						<img src="3images/step14.png" alt="">
+					</li>
+					<li>
+						<p><span class="callout--linumber">3.</span> Add your changes to the queue to be added to GitHub using <span class="callout--code">git add .</span>.</p>
+					</li>
+					<li>
+						<p><span class="callout--linumber">4.</span> Write a commit message explaining what changes are made. <span class="callout--code">git commit -m "change nav bg color to blue"</span>.</p>
+						<img src="images/step15.png" alt="">
+					</li>
+					<li>
+						<p><span class="callout--linumber">5.</span> Lastly, push your changes up to GitHub, <span class="callout--code">git push origin nav-change</span>.</p>
+						<img src="images/step16.png" alt="">
+					</li>
+				</ol>
 			</section>
 			<section>
 				<h2>Applying Changes to Another Branch</h2>
 				<p>The changes you made to the nav bar look great and you want them to show up on your site. How do we take that code and apply it to the gh-pages branch?</p>
-				<p>Switch to the branch you want the code to be applied to. In this case, we want the changes to appear on our deployed site, so we need the changes to be applied to the gh-pages branch. To switch to this branch, run <span class="callout--code">git checkout gh-pages</span>.</p>
-				<img src="images/step17.png" alt="">
-				<p>Next, we'll need to pull in the code from the branch that we made the changes on. Run <span class="callout--code">git pull origin nav-change</span>.</p>
-				<img src="images/step18.png" alt="">
-				<p>Then we need to push the changes up to the gh-pages branch on GitHub. <span class="callout--code">git push origin gh-pages</span>.</p>
-				<img src="images/step19.png" alt="">
+				<ol>
+					<li>
+						<span class="callout--linumber">1.</span> <p>Switch to the branch you want the code to be applied to. In this case, we want the changes to appear on our deployed site, so we need the changes to be applied to the gh-pages branch. To switch to this branch, run <span class="callout--code">git checkout gh-pages</span>.</p>
+						<img src="images/step17.png" alt="">
+					</li>
+					<li>
+						<p><span class="callout--linumber">2.</span> Next, we'll need to pull in the code from the branch that we made the changes on. Run <span class="callout--code">git pull origin nav-change</span>.</p>
+						<img src="images/step18.png" alt="">
+					</li>
+					<li>
+						<p><span class="callout--linumber">3.</span> Then we need to push the changes up to the gh-pages branch on GitHub. <span class="callout--code">git push origin gh-pages</span>.</p>
+						<img src="images/step19.png" alt="">
+					</li>
+				</ol>
 				<p>Now if you go to username.github.io, you can see the changes that you made on the nav-change branch that you pulled into the gh-pages branch are there! The changes still exist on the nav-change branch, we are just also using them on the gh-pages branch now too!</p>
 			</section>
 		</div>
