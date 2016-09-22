@@ -55,7 +55,7 @@
 			<section>
 				<h2>So What Have You Done So Far?</h2>
 				<p>You've created a repo on GitHub and renamed a folder on your desktop, and they're both named yourgithubusername.github.io.</p>
-				<p>Right now, the repo on GitHub is empty. Just because the repo name and the directory on your computer have the same name doesn't mean that the repo automagically updates whenever you change code in the directory on your computer.</p>
+				<p>Right now, the repo on GitHub is empty. Just because the repo name and the directory name on your computer are the same doesn’t mean that the repo automagically updates whenever you change code in the directory on your computer.</p>
 				<p>You have to use a little computer magic (aka Git) so that the directory on your computer and the repo on GitHub can talk to each other.</p>
 				<p>Every time you want to add files from your computer to the repo on GitHub, you have to do so manually.</p>
 			</section>
@@ -91,7 +91,7 @@
 					</li>
 					<li>
 						<p>
-							<span class="callout--linumber">6.</span> Next up, you need to write a little message deatiling what files you added and/or what changes you made. You'll do this using <span class="callout--code">git commit -m "message"</span>. For the first commit, "init commit" is common practice, but you'll want to be more specific after that.
+							<span class="callout--linumber">6.</span> Next up, you need to write a little message detailing what files you added and/or what changes you made. You'll do this using <span class="callout--code">git commit -m "message"</span>. For the first commit, "init commit" is common practice, but you'll want to be more specific after that.
 						</p>
 						<img src="images/step9.png" alt="">
 					</li>
@@ -110,7 +110,7 @@
 				<p>The GitHub Pages feature works with a branch called gh-pages. So far you only have one branch and it's called master. You need to make the gh-pages branch and add your files there.</p>
 				<p>What is branching anyway? Branching is a way for you to have multiple versions of your project in the folder. Whenever you create a new branch, all of the code from the branch you are on when you create a new branch is copied to that branch. For example, when we create our gh-pages branch from master, all of the code from master will be on gh-pages.</p>
 				<p>However, changes that you make on the gh-pages branch will not show up on master unless you expicitly add them (more on this later). Branching is great because it allows you to experiment with new designs, features, etc. in a safe zone without changing all the files.</p>
-				<p>To create a new branch, run the command <span class="callout--code">git checkout -b branchname</span>. In this case, we want to create the branch gh-pages, so run<span class="callout--code">git checkout -b gh-pages</span>.</p>
+				<p>To create a new branch, run the command <span class="callout--code">git checkout -b branchname</span>. In this case, we want to create the branch gh-pages, so run<span class="callout--code"> git checkout -b gh-pages</span>.</p>
 				<img src="images/step11.png" alt="">
 				<p>Note: the <span class="callout--code">-b</span> in the command we just ran is what creates the new branch. To switch between branches, just run <span class="callout--code">git checkout branchname</span> where branchname is the branch you want to switch to. Make sure all of your changes are committed before switching branches.</p>
 			</section>
@@ -126,7 +126,7 @@
 				<p>Say you want to make a change to your nav. What would that workflow look like?</p>
 				<ol>
 					<li>
-						 <p><span class="callout--linumber">1.</span> First checkout to a new branch. Call it nav-change <span class="callout--code">git checkout -b nav-change</span>.</p>
+						 <p><span class="callout--linumber">1.</span> First checkout to a new branch. Call it navchange <span class="callout--code">git checkout -b navchange</span>.</p>
 						<img src="images/step13.png" alt="">
 					</li>
 					<li>
@@ -141,7 +141,7 @@
 						<img src="images/step15.png" alt="">
 					</li>
 					<li>
-						<p><span class="callout--linumber">5.</span> Lastly, push your changes up to GitHub, <span class="callout--code">git push origin nav-change</span>.</p>
+						<p><span class="callout--linumber">5.</span> Lastly, push your changes up to GitHub, <span class="callout--code">git push origin navchange</span>.</p>
 						<img src="images/step16.png" alt="">
 					</li>
 				</ol>
@@ -155,7 +155,7 @@
 						<img src="images/step17.png" alt="">
 					</li>
 					<li>
-						<p><span class="callout--linumber">2.</span> Next, you'll need to pull in the code from the branch that you made the changes on. Run <span class="callout--code">git pull origin nav-change</span>.</p>
+						<p><span class="callout--linumber">2.</span> Next, you'll need to pull in the code from the branch that you made the changes on. Run <span class="callout--code">git pull origin navchange</span>.</p>
 						<img src="images/step18.png" alt="">
 					</li>
 					<li>
@@ -163,7 +163,7 @@
 						<img src="images/step19.png" alt="">
 					</li>
 				</ol>
-				<p>Now if you go to username.github.io, you can see the changes that you made on the nav-change branch that you pulled into the gh-pages branch are there! The changes still exist on the nav-change branch, we are just also using them on the gh-pages branch now too!</p>
+				<p>Now if you go to username.github.io, you can see the changes that you made on the navchange branch that you pulled into the gh-pages branch are there! The changes still exist on the navchange branch, we are just also using them on the gh-pages branch now too!</p>
 			</section>
 		</div>
 	</body>
